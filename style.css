@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgba(172, 172, 172 ,0.3)
 }
 .header{
     display: flex;
@@ -16,7 +18,7 @@ html{
     background: url(img/wave.svg) no-repeat;
 }
 .nombres, .apellidos{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
 }
 .apellidos{
@@ -48,7 +50,19 @@ html{
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    cursor: pointer;
     background: url(img/yo.jpg) no-repeat center / cover;
+    box-shadow: 2px 3px rgba(0,0,0,0.1);
+    transition: box-shadow .5s;
+}
+.separador{
+    display: none;
+    margin: 5px 0;
+    width: 40%;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.img-perfil:hover{
+    box-shadow: 2.5px 3.5px rgba(0,0,0,0.2);
 }
 @media (max-width: 600px){
     .contenido-header{
@@ -59,9 +73,16 @@ html{
         height: 200px;
     }
     .contenedor-img{
-        margin-top: 200px;
+        margin-top: 170px;
     }
     .contenedor-nombre{
+        margin-top: 20px;
         width: 100%;
+    }
+    .nombres, .apellidos{
+        font-size: 40px;
+    }
+    .separador{
+        display: block;
     }
 }

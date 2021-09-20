@@ -8,7 +8,7 @@
 }
 html{
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: rgba(172, 172, 172 ,0.3)
+    background-color: rgba(172, 172, 172 ,0.3);
 }
 /*Header de la pagina como tal*/
 .header{
@@ -88,13 +88,20 @@ html{
     height: 50px;
 }
 /*Cuerpo de la pagina*/
-.contenedor-descripcion{
+.contenedor-descripcion, .contenedor-others, .contenedor-info{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px 0;
     width: 100%;
     height: auto;
+}
+.contenedor-others{
+    margin-top: 70px;
+}
+.contenedor-info{
+    display: flex;
+    margin-top: 10px;
 }
 .description{
     display: flex;
@@ -107,46 +114,84 @@ html{
 }
 .tecnologias{
     width: 90%;
-    margin: 70px 0;
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.logos-img{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px 10px;
-    justify-content: space-between;
-    width: 100%;
+.forma{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transition: all 300ms ease 0ms;
 }
-.tarjeta-tec{
+.forma:hover{
+    width: 180px;
+    height: 180px;
+    transform: rotate(0deg);
+    border-radius: 20px;
+}
+.contenedor-tcg, .contenedor-tcg2{
+    display: flex;
+    width: 50%;
+    height: 100px;
+    justify-content: space-evenly;
+}
+.contenedor-tcg2{
+    width: 70%;
+    height: 150px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    background: rgba(172, 172, 172 ,0.3);
+    height: 150px;
+}
+.back-name{
+    height: 10%;
     display: flex;
     align-items: flex-end;
-    width: 90%;
-    margin: 10px 10px;
-    height: 200px;
-}
-.cont-img-tec{
-    background-color: gray;
-    border-radius: 10px;
-    box-shadow: 2px 2px rgba(0,0,0,0.1);
-    width: 45%;
-    height: 160px;
-}
-.cont-txt-tec{
-    width: 55%;
-    height: 120px;
-    margin-left: -15px;
-    margin-bottom: 10px;
-    padding: 10px 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 2px 4px rgba(0,0,0,0.1);
-}
-.cont-img-tec img{
+    justify-content: center;
+    padding: 10px 0;
     width: 100%;
-    border-radius: 10px;
-    height: 160px;
+}
+.personal-info{
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 0px solid gray;
+}
+.personal-info p:hover{
+    color: rgba(5, 64, 162, 0.8);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(5, 64, 162, 0.8);
+    transition: all .3s ease 0ms;
+}
+.ficha-informativa{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+.img-infov{
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+    background: url("https://images.unsplash.com/photo-1544652478-6653e09f18a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80") center;
+}
+.texto-infov{
+    display: flex;
+    height: 300px;
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    margin-left: -90px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
 }
 @media (max-width: 600px){
     .header{
@@ -190,15 +235,24 @@ html{
     .tecnologias{
         width: 95%;
     }
-    .cont-img-tec{
-        width: 50%;
-        height: 150px;
+    .img-infov{
+        height: 320px;
+        width: 220px;
     }
-    .cont-img-tec img {
-        height: 150px;
+    .texto-infov{
+        height: 220px;
+        width: 75%;
+        margin-left: -50px;
+        font-size: 14px;
     }
-    .cont-txt-tec{
-        width: 80%;
-        height: 100px;
+    .contenedor-tcg2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 200px;
+    }
+    .contenedor-tcg{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 170px;
     }
 }

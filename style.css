@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+
 /*position: sticky; -> es similar al fixed, lo toma desde la posicion en la que se encuentre*/
 *{
     margin: 0;
@@ -7,8 +10,8 @@
     box-sizing: border-box;
 }
 html{
-    font-family: 'Source Sans Pro', sans-serif;
     background-color: rgba(172, 172, 172 ,0.3);
+    font-family: 'Roboto Condensed', sans-serif;
 }
 /*Header de la pagina como tal*/
 .header{
@@ -21,12 +24,28 @@ html{
     background: url(img/wave.svg) no-repeat;
 }
 .nombres, .apellidos{
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 60px;
     font-weight: bold;
     transition: all 300ms ease 0ms;
 }
 .apellidos{
     color: rgba(5, 0, 105, 0.9);
+}
+.titulo-principal{
+    font-size: 40px;
+    color:#313034 ; /*#484751*/
+}
+.titulo-txt{
+    font-size: 30px;
+    color:#313034 ; /*#484751*/
+}
+.parrafos-txt, .parrafos-txt2{
+    font-size: 20px;
+    color:#484751 ;
+}
+.parrafos-txt2{
+    font-size: 18px;
 }
 .contenido-header{
     display: flex;
@@ -137,6 +156,7 @@ html{
     width: 50%;
     height: 100px;
     justify-content: space-evenly;
+    transition: all .6s ease 0ms;
 }
 .contenedor-tcg2{
     width: 70%;
@@ -180,6 +200,7 @@ html{
     border-radius: 20px;
     height: 500px;
     width: 500px;
+    box-shadow: 2px 3px rgba(0,0,0,0.1);
     background: url("https://images.unsplash.com/photo-1544652478-6653e09f18a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80") center;
 }
 .texto-infov{
@@ -192,6 +213,9 @@ html{
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    border-right: 1.5px solid rgba(36, 20, 201, 0.5);
+    border-bottom: 1.5px solid rgba(36, 20, 201, 0.5);
+    transition: all .6s ease 0ms;
 }
 @media (max-width: 600px){
     .header{
@@ -229,21 +253,22 @@ html{
     .description{
         width: 70%;
     }
-    .logos-img{
-        grid-template-columns: repeat(1, 1fr);
-    }
     .tecnologias{
         width: 95%;
     }
     .img-infov{
-        height: 320px;
-        width: 220px;
+        height: 150px;
+        width: 90%;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0 rgba(0,0,0,0.1);
     }
     .texto-infov{
-        height: 220px;
-        width: 75%;
-        margin-left: -50px;
-        font-size: 14px;
+        height: auto;
+        width: 90%;
+        margin-left: 0px;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 2px 3px rgba(0,0,0,0.1);
+        border: 0;
     }
     .contenedor-tcg2{
         display: grid;
@@ -254,5 +279,11 @@ html{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         height: 170px;
+    }
+    .ficha-informativa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }

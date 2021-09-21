@@ -1,3 +1,4 @@
+//Tooltips con Libreria TippyJs
 tippy('#html', {
     content: 'HTML5',
 });
@@ -31,6 +32,7 @@ tippy('#dart', {
 function btnAlert(){
     alert("Ventana emergente");
 }
+//Animación scroll reveal 
 window.sr = ScrollReveal();
 sr.reveal('.header', {
     duration: 2000,

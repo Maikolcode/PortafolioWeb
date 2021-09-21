@@ -286,4 +286,10 @@ html{
         align-items: center;
         flex-direction: column;
     }
+    .titulo-principal{
+        font-size: 38px;
+    }
+    .titulo-txt{
+        font-size: 26px;
+    }
 }

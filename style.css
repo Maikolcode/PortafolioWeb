@@ -291,5 +291,6 @@ html{
     }
     .titulo-txt{
         font-size: 26px;
+        text-align: center;
     }
 }

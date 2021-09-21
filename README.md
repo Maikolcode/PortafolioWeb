@@ -1,6 +1,6 @@
 <h1>Portafolio Web</h1>
 
-<b>Bienvenido</b>, este es un pequeño proyecto donde voy a plasmar a mi manera una hoja de vida o curriculum vitae en un entorno de web, dando a conocer mis objetivos y mi ruta de aprendizaje.
+<b>Bienvenido</b>, este es un pequeño proyecto donde voy a plasmar a mi manera una hoja de vida o curriculum vitae en un entorno de web, dando a conocer mis objetivos y mi ruta de aprendizaje. :man_technologist:
 
 <h2>Como lo hice? :rocket:</h2>
 

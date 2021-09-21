@@ -6,9 +6,9 @@
 
 Para la elaboracion de la pagina utilice 3 lenguajes muy importantes en el desarrollo web, los cuales son:
 
-- HTML :sparkler:
-- CSS :balloon:
-- JS :crystal_ball:
+- HTML :ringed_planet:
+- CSS :milky_way:
+- JS :fire:
 
 Apoyandome con algunas librerias de Java Script para mejorar el diseño.
 
@@ -17,6 +17,10 @@ Apoyandome con algunas librerias de Java Script para mejorar el diseño.
 
 <h2>Demo funcional :ok_hand:</h2>
 
-<img src="img/demo.png" height="100" widht="100"/>
+<img src="img/demo.png" height="400" widht="400"/>
 
 Si quieres revisarla en la web dale click <a href="https://michaelparra.netlify.app/">aqui</a> :point_left:
+
+<h2>Autor :pushpin:</h2>
+
+- Michael Parra -> _Desarrollo y despliegue de la pagina_ 
